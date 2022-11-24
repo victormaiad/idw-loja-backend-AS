@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itens_pedidos",
+  "info": {
+    "singularName": "itens-pedido",
+    "pluralName": "itens-pedidos",
+    "displayName": "ItensPedido"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "produto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::produto.produto"
+    },
+    "quantidade": {
+      "type": "integer"
+    }
+  }
+}
