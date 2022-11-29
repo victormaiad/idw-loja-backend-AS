@@ -4,7 +4,8 @@
   "info": {
     "singularName": "itens-pedido",
     "pluralName": "itens-pedidos",
-    "displayName": "ItensPedido"
+    "displayName": "ItensPedido",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,12 @@
     },
     "quantidade": {
       "type": "integer"
+    },
+    "pedido": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pedido.pedido",
+      "inversedBy": "itens_pedidos"
     }
   }
 }

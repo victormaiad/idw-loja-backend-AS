@@ -18,13 +18,14 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "pedidos"
     },
+    "total": {
+      "type": "float"
+    },
     "itens_pedidos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::itens-pedido.itens-pedido"
-    },
-    "total": {
-      "type": "float"
+      "target": "api::itens-pedido.itens-pedido",
+      "mappedBy": "pedido"
     }
   }
 }
